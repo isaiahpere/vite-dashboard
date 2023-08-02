@@ -2,11 +2,14 @@ import "./Home.scss";
 
 import TopBox from "../../components/topBox/TopBox";
 import ChartBox from "../../components/chartBox/ChartBox";
+import BarChartBox from "../../components/barChartBox/BarChartBox";
 import {
   chartBoxUser,
   chartBoxProduct,
   chartBoxRevenue,
   chartBoxConversion,
+  barChartBoxRevenue,
+  barChartBoxVisit,
 } from "../../data";
 
 const Home = () => {
@@ -29,8 +32,12 @@ const Home = () => {
         <ChartBox {...chartBoxRevenue} />
       </div>
       <div className="box box7">Box7</div>
-      <div className="box box8">Box8</div>
-      <div className="box box9">Box9</div>
+      <div className="box box8">
+        <BarChartBox {...barChartBoxVisit} />
+      </div>
+      <div className="box box9">
+        <BarChartBox {...barChartBoxRevenue} />
+      </div>
     </div>
   );
 };
