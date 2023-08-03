@@ -1,9 +1,9 @@
+import { FC } from "react";
 import { Bar, BarChart, ResponsiveContainer, Tooltip } from "recharts";
 
 import "./BarChartBox.scss";
 
 import * as T from "../../types";
-import { FC } from "react";
 
 const BarChartBox: FC<T.IBarChartBox> = ({
   title,
