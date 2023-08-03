@@ -717,3 +717,48 @@ export const singleProduct = {
     },
   ],
 };
+
+export const weeklyData = [
+  {
+    name: "Sun",
+    books: 4000,
+    clothes: 2400,
+    electronics: 2400,
+  },
+  {
+    name: "Mon",
+    books: 3000,
+    clothes: 1398,
+    electronics: 2210,
+  },
+  {
+    name: "Tue",
+    books: 2000,
+    clothes: 9800,
+    electronics: 2290,
+  },
+  {
+    name: "Wed",
+    books: 2780,
+    clothes: 3908,
+    electronics: 2000,
+  },
+  {
+    name: "Thu",
+    books: 1890,
+    clothes: 4800,
+    electronics: 2181,
+  },
+  {
+    name: "Fri",
+    books: 2390,
+    clothes: 3800,
+    electronics: 2500,
+  },
+  {
+    name: "Sat",
+    books: 3490,
+    clothes: 4300,
+    electronics: 2100,
+  },
+];
