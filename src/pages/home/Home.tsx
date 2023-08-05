@@ -1,5 +1,3 @@
-import "./Home.scss";
-
 import TopBox from "../../components/topBox/TopBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 import BarChartBox from "../../components/barChartBox/BarChartBox";
@@ -13,6 +11,8 @@ import {
 } from "../../data";
 import PieChartBox from "../../components/pieChartBox/PieChartBox";
 import BigChartBox from "../../components/bigChartBox/BigChartBox";
+
+import "./Home.scss";
 
 const Home = () => {
   return (

@@ -1,8 +1,8 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 
 import "./DataTable.scss";
-import { Link } from "react-router-dom";
 
 interface Iprops {
   columns: GridColDef[];
@@ -54,7 +54,7 @@ const DataTable: FC<Iprops> = ({ columns, rows, slug }) => {
             quickFilterProps: { debounceMs: 500 },
           },
         }}
-        pageSizeOptions={[5]}
+        pageSizeOptions={[10]}
         checkboxSelection
         disableRowSelectionOnClick
         disableColumnFilter

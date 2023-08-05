@@ -1,9 +1,9 @@
-import "./Users.scss";
+import { GridColDef } from "@mui/x-data-grid";
 
 import DataTable from "../../components/dataTable/DataTable";
-import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-
 import { userRows } from "../../data";
+
+import "./Users.scss";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
@@ -29,19 +29,6 @@ const columns: GridColDef[] = [
     width: 150,
     editable: true,
   },
-  // {
-  //   field: "actions",
-  //   headerName: "Actions",
-  //   width: 100,
-  //   renderCell: (params) => {
-  //     return (
-  //       <div className="action">
-  //         <div className="view">View</div>
-  //         <div className="delete">Delete</div>
-  //       </div>
-  //     );
-  //   },
-  // },
   {
     field: "email",
     headerName: "Email",
@@ -80,3 +67,5 @@ const Users = () => {
 };
 
 export default Users;
+
+// STOPPED AT 1:40:15
