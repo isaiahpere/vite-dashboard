@@ -7,7 +7,6 @@ interface Iprops {
   columns: GridColDef[];
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
 const Add: FC<Iprops> = ({ setOpen, slug, columns }) => {
   const handleClose = () => {
     setOpen(false);
