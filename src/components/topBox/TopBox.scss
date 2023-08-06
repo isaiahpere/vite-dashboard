@@ -1,7 +1,12 @@
+@import "../../styles/responsive.scss";
 .topBox {
   h1 {
     margin-bottom: 20px;
     text-transform: capitalize;
+
+    @include xxl {
+      font-size: 24px;
+    }
   }
 
   .listItem {
