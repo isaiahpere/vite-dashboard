@@ -9,6 +9,10 @@ import Menu from "./components/menu/Menu";
 import Login from "./components/login/Login";
 
 import "./styles/global.scss";
+import User from "./pages/user/User";
+import Product from "./pages/product/Product";
+import Orders from "./pages/orders/Orders";
+import Posts from "./pages/posts/Posts";
 
 function App() {
   // Menu & Content Layout
@@ -45,6 +49,22 @@ function App() {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/users/:id",
+          element: <User />,
+        },
+        {
+          path: "/products/:id",
+          element: <Product />,
+        },
+        {
+          path: "/posts",
+          element: <Posts />,
+        },
+        {
+          path: "/orders",
+          element: <Orders />,
         },
       ],
     },

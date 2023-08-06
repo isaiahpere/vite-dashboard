@@ -32,3 +32,31 @@ export interface IBarChartBox {
   chartData: IChartData[];
   [key: string]: ValueOf<IBarChartBox>;
 }
+
+export interface IInfoUser {
+  username: string;
+  fullname: string;
+  email: string;
+  phone: string;
+  status: string;
+}
+
+export interface IInfoProduct {
+  productId: string;
+  color: string;
+  price: string;
+  producer: string;
+  export: string;
+}
+
+export interface IUserData {
+  name: string;
+  visits: number;
+  clicks: number;
+}
+
+export interface IProductData {
+  name: string;
+  visits: number;
+  orders: number;
+}
