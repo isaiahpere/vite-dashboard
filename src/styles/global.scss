@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./responsive.scss";
 
 * {
   margin: 0;
@@ -19,6 +20,10 @@ a {
 
 .container {
   display: flex;
+
+  @include xxl {
+    background-color: red;
+  }
 }
 
 .menuContainer {
